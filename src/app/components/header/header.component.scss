@@ -1,0 +1,63 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 20px 150px;
+
+  // glass-background
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+
+  border-bottom: 1px solid white;
+
+  .slogan {
+    margin-top: 20px;
+  }
+}
+
+img {
+  width: 100px;
+}
+
+mat-icon {
+  color: var(--red);
+}
+
+.start-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: var(--red);
+  }
+
+  .menu {
+    margin-left: 30px;
+  }
+  h4 {
+    display: flex;
+    margin-top: 20px;
+    mat-icon {
+      margin-left: 5px;
+    }
+  }
+}
